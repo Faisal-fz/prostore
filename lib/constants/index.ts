@@ -15,3 +15,11 @@ export const signUpDefaultValues = {
     password: 'password',
     confirmPassword: 'password',
 };
+
+export const shippingAddressDefaultValues = {
+    fullName: 'John Doe',
+    streetAddress: '123 Main St',
+    city: 'New Yok',
+    postalCode: '972455',
+    country: 'USA',
+  };
