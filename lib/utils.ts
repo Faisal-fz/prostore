@@ -15,7 +15,11 @@ export function formatNumberWithDecimal(num: number): string {
   const [int, decimal] = num.toString().split('.');
   return decimal ? `${int}.${decimal.padEnd(2, '0')}` : `${int}.00`;
 }
-
+//  Format Numbers
+const NUMBER_FORMATTER = new Intl.NumberFormat('en-US');
+export function formatNumber(number: number) {
+  return NUMBER_FORMATTER.format(number);
+}
 // Format Errors
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function formatError(error: any): string {
